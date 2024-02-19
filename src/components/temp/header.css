@@ -1,0 +1,23 @@
+.container_header {
+	width: 285px;
+	padding: 16px;
+	border-right: 1px solid #FFF;
+}
+
+.logo_box {
+	text-align: center;
+	margin-bottom: 16px;
+}
+
+.logo {
+	font-size: 34px;
+	font-weight: bolder;
+}
+
+.nav_contents {
+	margin-bottom: 12px;
+}
+
+.nav_list {
+	font-size: 16px;
+}

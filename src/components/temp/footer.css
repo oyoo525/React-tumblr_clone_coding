@@ -1,0 +1,97 @@
+.container_footer {
+	width: 380px;
+	padding: 16px;
+	border-left: 1px solid #FFF;
+}
+
+.search_box {
+	display: flex;
+	align-items: center;
+	padding: 4px;
+	width: 100%;
+	background-color: #B8BFB0;
+	border-radius: 7px;
+	opacity: 0.7;
+}
+
+.search_icon {
+	width: 30px;
+}
+
+.bi-search {
+	margin: 0 5px;
+	color: #FFF;
+}
+
+.search_form {
+	width: 100%;
+}
+
+.search_input {
+	border: none;
+	background-color: transparent;
+	width: calc(100% - 30px);
+}
+.search_input:focus {
+	outline: none;
+}
+.search_input::placeholder {
+	color: #FFF;
+}
+
+.popular_box {
+	margin: 20px 0;
+	width: 100%;
+	border-radius: 7px;
+	background-color: #032E57;
+}
+
+.popular_title {
+	padding: 20px;
+	margin-bottom: 12px;
+	border-bottom: 1px solid #FFF;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.popular_contents {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 6px 12px 6px 12px;
+	width: 100%;
+}
+
+.blog_info {
+	width: calc(100% - 120px);
+	text-align: left;
+}
+
+.blog_info_title {
+	font-weight: bold;
+}
+
+.blog_info_nickname {
+	font-size: 14px;
+}
+
+.follow_box {
+	width: 50px;
+	text-align: right;
+}
+
+.follow_btn {
+	font-weight: 700;
+}
+
+.more_blog {
+	padding: 20px;
+	margin-top: 12px;
+	border-top: 1px solid #FFF;
+	text-align: center;
+}
+
+.more_btn {
+	font-size: 17px;
+	font-weight: 900;
+}

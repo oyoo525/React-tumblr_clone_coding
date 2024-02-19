@@ -1,0 +1,16 @@
+.container_page {
+	border-bottom: 1px solid #FFF;
+	font-size: 18px;
+}
+
+.grid_icon {
+	padding-right: 10px;
+}
+
+.grid_icon > * {
+	margin-left: 5px;
+}
+
+li:hover {
+	opacity: 0.6;
+}

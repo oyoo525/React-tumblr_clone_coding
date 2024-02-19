@@ -1,0 +1,35 @@
+.tag_box {
+	margin: 0 10px 10px 0;
+	padding: 12px;
+	width: 300px;
+	height: 90px;
+	background-color: #BF9004;
+}
+.tag_box_info {
+	display: flex;
+	justify-content: space-between;
+}
+.circle_box {
+	font-size: 19px;
+	font-weight: 700;
+	color: #FFF;
+}
+.circle_box > span {
+	line-height: 100%;
+	align-items: center;
+}
+
+.tab_box_content {
+	width: calc(100% - 110px);
+	padding: 0 3px;
+}
+
+.content_title {
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 0;
+}
+
+.content_tag {
+	font-size: 13px;
+}

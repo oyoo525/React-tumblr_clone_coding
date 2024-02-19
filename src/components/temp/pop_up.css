@@ -1,0 +1,47 @@
+.container_fluid {
+	position: relative;
+	height: 100%;
+}
+
+.member_under_bar {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 26px;
+	background-color: #4F81F7;
+	width: 100%;
+	height: 130px;
+	text-align: center;
+}
+
+.bar_text {
+	font-size: 20px;
+	margin-bottom: 7px;
+}
+
+.member_buttons {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.member_buttons > div {
+	width: 20%;
+	padding: 8px;
+}
+
+.member_join_btn {
+	background-color: #011140;
+	color: #FFF;
+	margin: 5px;
+}
+
+.member_login_btn {
+	background-color: #EFB7FF;	
+	color: #011140;
+	margin: 5px;
+}

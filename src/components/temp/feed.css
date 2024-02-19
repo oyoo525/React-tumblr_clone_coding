@@ -1,0 +1,61 @@
+.feed {
+	width: 100%;
+	border-radius: 7px;
+	overflow: hidden;
+	margin-bottom: 12px;
+}
+
+.feed_title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	background-color: #FFF;
+}
+
+.name_box {
+	width: calc(100% - 100px);
+	padding: 0 10px;
+	font-size: 16px;
+	font-weight: 800;
+}
+
+.icon_box {
+	width: 50px;
+	text-align: center;
+}
+.icon_box > span:hover {
+	cursor: pointer;
+}
+
+.feed_footer {
+	width: 100%;
+	background-color: #FFF;
+	padding: 10px;
+}
+
+.tag_list {
+	margin-bottom: 24px;
+}
+
+.feed_info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.feed_like {
+	border: 1px solid black;
+	border-radius: 35px;
+	padding: 7px 20px;
+	text-align: center;
+	line-height: 100%;
+}
+.feed_like > span {
+	font-size: 14px;
+}
+
+.feed_info_icon {
+	font-size: 24px;
+	font-weight: 900;
+}
