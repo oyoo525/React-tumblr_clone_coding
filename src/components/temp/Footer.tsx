@@ -6,24 +6,24 @@ import profile_img from '../../assets/img/download.png';
 
 export default function Footer() {
 	return (
-		<div className="container_footer">
-			<div className="search_box">
+		<div className="container_footer border_left">
+			<div className="search_box bg_color01">
 				<div className="search_icon">
-					<span><i className="bi bi-search"></i></span>
+					<span className="text_color01"><i className="bi bi-search"></i></span>
 				</div>
 				<form className="search_form">
 					<input type="text" placeholder="Sumblr 검색" className="search_input"/>
 				</form>
 			</div>
 
-			<div className="popular_box">
+			<div className="popular_box bg_color02">
 				<div className="popular_title">
 					<span className="text_color01">요즘 뜨는 블로그</span>
 				</div>
 				{/* 블로그 반복~~ */}
 				<div className="popular_contents">
 					<div className="profile_box">
-						<img src={profile_img} className="profile_img" />
+						<img src={profile_img} className="profile_img" alt="프로필 이미지"/>
 					</div>
 					<div className="blog_info text_color01">
 						<div className="blog_info_title">
@@ -42,7 +42,7 @@ export default function Footer() {
 				{/* 블로그 반복~~ */}
 				<div className="popular_contents">
 					<div className="profile_box">
-						<img src={profile_img} className="profile_img" />
+						<img src={profile_img} className="profile_img" alt="프로필 이미지" />
 					</div>
 					<div className="blog_info text_color01">
 						<div className="blog_info_title">

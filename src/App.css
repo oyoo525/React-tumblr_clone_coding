@@ -5,6 +5,111 @@
 :root,
 :root.basic {
   .App {
+    background-color: #011140;
+  }
+  .text_color01 {
+    color : #FFF;
+  }
+  .text_color02 {
+    color: skyblue;
+  }
+  .search_input::placeholder {
+    color: #FFF;
+  }
+  .border_right {
+    border-right: 1px solid #FFF;
+  }
+  .border_left {
+    border-left: 1px solid #FFF;
+  }
+  .bg_color01 {
+    background-color: #B8BFB0;
+  }
+  .bg_color02 {
+    background-color: #032E57;
+  }
+  .bg_color03 {
+    background-color: #BF9004;
+  }
+}
+
+:root.light {
+  .App {
+    background-color: #FFF;
+  }
+  .text_color01 {
+    color : #000;
+  }
+  .text_color02 {
+    color: #404040;
+  }
+  .search_input::placeholder {
+    color: #000;
+  }
+  .border_right {
+    border-right: 1px solid #000;
+  }
+  .border_left {
+    border-left: 1px solid #000;
+  }
+  .bg_color01 {
+    background-color: #A6A6A6; 
+  }
+  .bg_color02 {
+    background-color: #D9D9D9;
+  }
+  .bg_color03 {
+    background-color: #A6A6A6;
+  }
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+}
+.App_cover {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 130px;
+}
+.container_page {
+  width: 475px;
+}
+.profile_box {
+  width: 50px;
+  height: 50px;
+  overflow: hidden; 
+  border-radius: 5px;
+}
+.profile_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img_box70 {
+  width: 70px;
+  height: 70px;
+  overflow: hidden; 
+  border-radius: 5px;
+}
+.circle_box {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #011140;
+  text-align: center;
+}
+.link_text {
+  text-decoration: none;
+}
+
+
+
+
+/* :root,
+:root.basic {
+  .App {
     display: flex;
     background-color: #011140;
     justify-content: center;
@@ -13,7 +118,7 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 100%;
+    height: 130px;
   }
   .container_page {
     width: 475px;
@@ -48,16 +153,11 @@
     background-color: #011140;
     text-align: center;
   }
-
   .link_text {
     text-decoration: none;
   }
-
 }
 
 :root.light {
-  .App {
-    display: flex;
-    background-color: #FFF;
-  }
-}
+  --bg-color : #FFF;
+} */

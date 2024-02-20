@@ -10,7 +10,6 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 10px;
-	background-color: #FFF;
 }
 
 .name_box {
@@ -30,7 +29,6 @@
 
 .feed_footer {
 	width: 100%;
-	background-color: #FFF;
 	padding: 10px;
 }
 
