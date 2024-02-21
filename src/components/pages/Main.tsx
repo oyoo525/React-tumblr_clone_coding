@@ -3,6 +3,7 @@ import './main.css';
 import Nav from "../temp/Nav.tsx";
 import TagBox from "../temp/TagBox.tsx";
 import Feed from "../temp/Feed.tsx";
+import PopUp from "../temp/Header_Footer/PopUp.tsx";
 
 export default function Main() {
 	const data = [
@@ -27,8 +28,6 @@ export default function Main() {
 					<Feed />
 					<Feed />
 				</div>
-
-
 			</div>
 		</div>
 		</>

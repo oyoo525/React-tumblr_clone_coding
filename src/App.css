@@ -4,7 +4,7 @@
 
 :root,
 :root.basic {
-  .App {
+  .App{
     background-color: #011140;
   }
   .text_color01 {
@@ -22,6 +22,9 @@
   .border_left {
     border-left: 1px solid #FFF;
   }
+  .bg_color00 {
+    background-color: #011140;
+  }
   .bg_color01 {
     background-color: #B8BFB0;
   }
@@ -30,6 +33,9 @@
   }
   .bg_color03 {
     background-color: #BF9004;
+  }
+  .btn01 {
+    background-color: skyblue;
   }
 }
 
@@ -52,6 +58,9 @@
   .border_left {
     border-left: 1px solid #000;
   }
+  .bg_color00 {
+    background-color: #FFF;
+  }
   .bg_color01 {
     background-color: #A6A6A6; 
   }
@@ -61,18 +70,17 @@
   .bg_color03 {
     background-color: #A6A6A6;
   }
+  .btn01 {
+    background-color: #A6A6A6;
+  }
 }
 
 .App {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
-.App_cover {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 130px;
-}
+
 .container_page {
   width: 475px;
 }
@@ -103,61 +111,8 @@
 .link_text {
   text-decoration: none;
 }
-
-
-
-
-/* :root,
-:root.basic {
-  .App {
-    display: flex;
-    background-color: #011140;
-    justify-content: center;
-  }
-  .App_cover {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 130px;
-  }
-  .container_page {
-    width: 475px;
-  }
-  .text_color01 {
-    color : #FFF;
-  }
-  .text_color02 {
-    color: skyblue;
-  }
-  .profile_box {
-    width: 50px;
-    height: 50px;
-    overflow: hidden; 
-    border-radius: 5px;
-  }
-  .profile_img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .img_box70 {
-    width: 70px;
-    height: 70px;
-    overflow: hidden; 
-    border-radius: 5px;
-  }
-  .circle_box {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #011140;
-    text-align: center;
-  }
-  .link_text {
-    text-decoration: none;
-  }
+.btn01 {
+  margin: 8px;
+  padding: 4px 12px;
+  border-radius: 18px;
 }
-
-:root.light {
-  --bg-color : #FFF;
-} */

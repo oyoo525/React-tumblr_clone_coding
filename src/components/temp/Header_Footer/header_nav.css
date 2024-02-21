@@ -1,0 +1,13 @@
+.nav_contents {
+	display: flex;
+	margin-bottom: 12px;
+}
+
+.nav_list {
+	font-size: 16px;
+	margin-right: 5px;
+}
+
+.nav_br {
+	display: none;
+}

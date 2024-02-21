@@ -1,0 +1,12 @@
+.logo_box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 16px;
+}
+
+.logo01, .logo02 {
+	font-size: 36px;
+	font-weight: bolder;
+}

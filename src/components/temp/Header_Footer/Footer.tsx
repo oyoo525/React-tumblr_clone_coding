@@ -2,7 +2,9 @@ import React from "react";
 import 'bootstrap-icons/font/bootstrap-icons.json';
 import { Link } from "react-router-dom";
 import './footer.css';
-import profile_img from '../../assets/img/download.png';
+import profile_img from '../../../assets/img/download.png';
+import img09 from '../../../assets/img/download09.png';
+import WebNav from "./WebNav.tsx";
 
 export default function Footer() {
 	return (
@@ -65,7 +67,22 @@ export default function Footer() {
 				</div>
 			</div>
 
-
+			<div className="sponsor_box">
+				<div className="sponsor_header">
+					<div className="sponsor_title">
+						<span className="text_color01">스폰서</span>
+					</div>
+					<div className="sponsor_remove_icon">
+						<span className="text_color01"><i className="bi bi-three-dots"></i></span>
+					</div>
+				</div>
+				<div className="sponsor_content">
+					<Link to="">
+						<img src={img09} alt="sponsor_img" className="profile_img" />
+					</Link>
+				</div>
+			</div>
+			<WebNav />
 		</div>
 	)
 }

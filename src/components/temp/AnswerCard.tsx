@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default function AnswerCard() {
 	return (
 		<div className="answer_card">
-			<div className="card_top">
+			<div className="card_top bg_color02">
 				<div className="card_title text_color01">
 					<div className="dead_line">
 						<span>2월 23일 오전 5:00 GMT+9</span>
@@ -15,10 +15,10 @@ export default function AnswerCard() {
 						<span className="">Pokemon GO</span>
 					</div>
 					<div className="answer_btn">
-						<div className="">
+						<div className="btn01">
 							질문하기
 						</div>
-						<div className="">
+						<div className="btn01">
 							팔로우
 						</div>
 					</div>
@@ -28,8 +28,8 @@ export default function AnswerCard() {
 				<Link to="">
 					<img src={img08} className="profile_img" alt="answer_img" />
 				</Link>
-				<div className="what_answertime"data-bs-toggle="modal" data-bs-target="#answerModal">
-					<span className="text_color01">질문 시간이란?</span>
+				<div className="what_answertime" data-bs-toggle="modal" data-bs-target="#answerModal">
+					<span style={{color : "#FFF"}}>질문 시간이란?</span>
 				</div>
 			</div>
 
@@ -57,7 +57,7 @@ export default function AnswerCard() {
 						</div>
 					</div>
 				</div>
-				</div>
+			</div>
 		</div>
 
 

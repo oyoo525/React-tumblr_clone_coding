@@ -1,10 +1,27 @@
-.container_page {
+.container_nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	border-bottom: 1px solid #FFF;
-	font-size: 18px;
+	font-size: 16px;
+	padding: 0 16px;
+}
+
+.top_menu_nav {
+	width: calc(100% - 55px);
+}
+
+.navbar_flex_box {
+	display: flex;
+}
+
+.nav-item {
+	margin-right: 15px;
 }
 
 .grid_icon {
-	padding-right: 10px;
+	width: 55px;
+	font-size: 20px;
 }
 
 .grid_icon > * {
