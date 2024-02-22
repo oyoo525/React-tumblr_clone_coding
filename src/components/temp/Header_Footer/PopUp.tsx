@@ -10,10 +10,10 @@ export default function PopUp() {
 					Sumblr 사용자에 합류해 커뮤니티를 찾아보고 새 친구들을 만나세요.
 				</div>
 				<div className="member_buttons">
-					<div className="member_join_btn" data-bs-toggle="modal" data-bs-target="#memberModal">
+					<div className="member_join_btn" data-bs-toggle="modal" data-bs-target="#memberModal" data-bs-backdrop="false">
 						<span>가입하기</span>
 					</div>
-					<div className="member_login_btn" data-bs-toggle="modal" data-bs-target="#memberModal">
+					<div className="member_login_btn" data-bs-toggle="modal" data-bs-target="#memberModal" data-bs-backdrop="false">
 						<span>로그인</span>
 					</div>
 				</div>

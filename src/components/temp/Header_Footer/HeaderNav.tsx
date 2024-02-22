@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import './header_nav.css';
 
 export default function HeaderNav() {

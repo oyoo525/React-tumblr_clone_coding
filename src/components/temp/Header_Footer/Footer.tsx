@@ -1,12 +1,25 @@
 import React from "react";
 import 'bootstrap-icons/font/bootstrap-icons.json';
 import { Link } from "react-router-dom";
+import axios from 'axios';
 import './footer.css';
 import profile_img from '../../../assets/img/download.png';
 import img09 from '../../../assets/img/download09.png';
 import WebNav from "./WebNav.tsx";
 
 export default function Footer() {
+	const [member, setMember] = React.useState([]);
+
+	const getMember = async () => {
+		const res = await axios.get("http://localhost:8080/member");
+		setMember(res.data);
+		console.log(res.data);
+	}
+
+	React.useEffect(() => {
+		getMember();
+	}, []);
+
 	return (
 		<div className="container_footer border_left">
 			<div className="search_box bg_color01">
@@ -42,24 +55,30 @@ export default function Footer() {
 					</div>
 				</div>
 				{/* 블로그 반복~~ */}
-				<div className="popular_contents">
-					<div className="profile_box">
-						<img src={profile_img} className="profile_img" alt="프로필 이미지" />
-					</div>
-					<div className="blog_info text_color01">
-						<div className="blog_info_title">
-							블로그 이름
+				{member.map((member, index, array) => 
+					<div className="popular_contents">
+						<div className="profile_box">
+							<img src={profile_img} className="profile_img" alt="프로필 이미지" />
 						</div>
-						<div className="blog_info_nickname">
-							활동명
+						<div className="blog_info text_color01">
+							<div className="blog_info_title">
+								블로그 이름
+							</div>
+							<div className="blog_info_nickname">
+								{member.id}
+							</div>
+						</div>
+						<div className="follow_box">
+							<Link to="" className="link_text">
+								<span className="follow_btn text_color02">팔로우</span>
+							</Link>
 						</div>
 					</div>
-					<div className="follow_box">
-						<Link to="" className="link_text">
-							<span className="follow_btn text_color02">팔로우</span>
-						</Link>
-					</div>
-				</div>
+				)}
+
+				
+
+
 				<div className="more_blog">
 					<Link to="" className="link_text">
 						<span className="more_btn text_color02">블로그 더 보기</span>
