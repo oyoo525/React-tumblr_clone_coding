@@ -8,6 +8,7 @@ import Main from './components/pages/Main.tsx';
 import PopUp from './components/temp/Header_Footer/PopUp.tsx';
 import StaffPicks from './components/pages/StaffPicks.tsx';
 import AnswerTime from './components/pages/AnswerTime.tsx';
+import Topics from './components/pages/Topics.tsx';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path='/trending' element={<Main />} />
             <Route path='/staff-picks' element={<StaffPicks />} />
             <Route path='/answertime' element={<AnswerTime />} />
+            <Route path='/topics' element={<Topics />} />
           </Routes>
           <Footer />
         </BrowserRouter>

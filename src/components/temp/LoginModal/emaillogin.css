@@ -1,0 +1,35 @@
+.email_login_form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.email_input_box {
+	width: 80%;
+	height: 42px;
+	background-color: #84B5FF;
+	border-radius: 7px;
+	margin-bottom: 14px;
+}
+
+.email_input {
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	border-radius: 7px;
+	border: none;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #FFF;
+}
+
+.email_input:focus {
+	border: 3px solid #FFF;
+	outline: #FFF;
+}
+
+.email_input::placeholder {
+	color: #FFF;
+	opacity: 0.6;
+}

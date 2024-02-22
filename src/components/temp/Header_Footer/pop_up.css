@@ -48,34 +48,3 @@
 	color: #011140;
 	margin: 5px;
 }
-
-.modal-content {
-	background-color: #4F81F7;
-	padding: 32px;
-	text-align: center;
-}
-
-.login_text {
-	margin-bottom: 24px;
-}
-
-.login_word {
-	font-size: 20px;
-	margin-bottom: 16px;
-}
-
-.login_btn_box {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.social_login_btn {
-	background-color: #FFF;
-	margin-bottom: 8px;
-	width: 70%;
-	padding: 8px;
-	border-radius: 12px;
-	font-weight: bolder;
-}
