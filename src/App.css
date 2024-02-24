@@ -81,16 +81,18 @@
   flex-wrap: wrap;
 }
 
-.cumstomer_modal {
+.cumstomer_modal, .popup_background {
 	position: fixed;
   left: 0;
   top: 0;
 	width: 100vw;
 	height: 100vh;
   z-index: 1060;
+  opacity: 0.6;
 }
-.modal_flex {
-	width: 100%;
+
+.modal_flex, .popup_layout {
+  width: 100%;
 	height: 100%;
 	display: flex;
 	justify-content: center;
@@ -100,6 +102,7 @@
   border-radius: 12px;
   overflow: hidden;
 }
+
 
 .container_page {
   width: 475px;

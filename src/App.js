@@ -15,7 +15,7 @@ function App() {
     <>
       <div className="App">
         <BrowserRouter>
-          <PopUp/>
+          {/* <PopUp/> */}
           <Header />
           <Routes>
             <Route path='/' element={<Main />} />

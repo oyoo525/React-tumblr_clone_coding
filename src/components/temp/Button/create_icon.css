@@ -1,0 +1,49 @@
+.create_icon_box {
+	display: flex;
+}
+
+.create_icon {
+	width: 120px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.icon_image_box {
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 36px;
+	margin-bottom: 3px;
+}
+.icon_text_box {
+	text-align: center;
+	color: #FFF;
+}
+
+
+.create_icon_01 {
+	background-color: #FFF;
+}
+.create_icon_02 {
+	background-color: #ED8C37;
+}
+.create_icon_03 {
+	background-color: #F5A936;
+}
+.create_icon_04 {
+	background-color: #51A885;
+}
+.create_icon_05 {
+	background-color: #267A9E;
+}
+.create_icon_06 {
+	background-color: #986b9b;
+}
+.create_icon_07 {
+	background-color: #DB7476;
+}

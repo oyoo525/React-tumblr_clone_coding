@@ -1,6 +1,12 @@
 .container_header {
 	width: 285px;
+	height: 100vh;
 	padding: 16px;
+}
+
+.header_box {
+	position: relative;
+	height: 100%;
 }
 
 .menu_canvas_left {
@@ -13,6 +19,14 @@
 
 .logo02 {
 	display: none;
+}
+
+.header_create_btn_box {
+	width: 100%;
+	padding: 0 12px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
 }
 
 @media screen and (max-width : 1235px) {

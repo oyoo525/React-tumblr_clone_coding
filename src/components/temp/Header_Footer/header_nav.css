@@ -1,6 +1,10 @@
 .nav_contents {
 	display: flex;
-	margin-bottom: 12px;
+	padding: 10px 6px;
+}
+.nav_contents:hover {
+	background-color: skyblue;
+	font-weight: bold;
 }
 
 .nav_list {
