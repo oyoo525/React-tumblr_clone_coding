@@ -1,9 +1,33 @@
-
-.modal-content {
+.login_modal_box {
 	background-color: #4F81F7;
 	padding: 32px;
 	text-align: center;
+	width: 480px;
 }
+
+.modal_header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 14px;
+}
+
+.modal_header > .modal_header_box_blank {
+	width: 30px;
+}
+.modal_close_btn_box {
+	width: 30px;
+	text-align: right;
+}
+.modal_logo_box {
+}
+
+.modal_close_btn_box > button {
+	border: none;
+	background-color: transparent;
+	color: #FFF;
+	font-size: 24px;
+}
+
 
 .login_text {
 	margin-bottom: 24px;

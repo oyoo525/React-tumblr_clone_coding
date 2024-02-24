@@ -2,7 +2,7 @@ import React from "react";
 import './emaillogin.css';
 import { useNavigate } from "react-router-dom";
 
-export default function EmailLogin() {
+export default function EmailLogin({isClose}) {
 
 	const navigate = useNavigate();
 
@@ -16,23 +16,22 @@ export default function EmailLogin() {
 			setStep(4);
 		} else if(step === 4) {
 			navigate("/answertime", {replace: true});
+			isClose();
 		}
 	}
 
-	let numberData01 : number = 1;
-	let numberData02 : number = 1900;
 	let month : number[] = [];
 	let day : number[] = [];
 	let year : number[] = new Array();
 	
 	for(let index=1; index<=12; index++) {
-		month.push(numberData01);
+		month.push(index);
 	}
 	for(let index=1; index<=31; index++) {
-		day.push(numberData01);
+		day.push(index);
 	}
 	for(let index=1900; index<=2024; index++) {
-		year.push(numberData02);
+		year.push(index);
 	}
 	
 
@@ -79,24 +78,24 @@ export default function EmailLogin() {
 					</div>
 					<form className="email_login_birthday">
 						<div className="email_input_box birthday_box">
-							<select>
-								<option>월</option>
+							<select className="birthday_select">
+								<option hidden>월</option>
 								{month.map((month) => 
 									<option>{month}</option>
 								)}
 							</select>
 						</div>
 						<div className="email_input_box birthday_box">
-							<select>
-								<option>일</option>
+							<select className="birthday_select">
+								<option hidden>일</option>
 								{day.map((day) => 
 									<option>{day}</option>
 								)}
 							</select>
 						</div>
 						<div className="email_input_box birthday_box">
-							<select>
-								<option>년도</option>
+							<select className="birthday_select">
+								<option hidden>년도</option>
 								{year.map((year) => 
 									<option>{year}</option>
 								)}

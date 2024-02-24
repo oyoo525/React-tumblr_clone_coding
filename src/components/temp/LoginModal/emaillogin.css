@@ -13,6 +13,10 @@
 	margin-right: 4px;
 }
 
+.birthday_select > option {
+	color: #000;
+}
+
 .birthday_box > select {
 	width: 100%;
 	height: 100%;

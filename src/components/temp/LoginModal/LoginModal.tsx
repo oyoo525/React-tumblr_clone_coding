@@ -2,8 +2,9 @@ import React from "react";
 import Logo01 from "../Logo/Logo.tsx";
 import './login_modal.css';
 import EmailLogin from "./EmailLogin.tsx";
+import { relative } from "path";
 
-export default function LoginModal({modal}) {
+export default function LoginModal({isOpen, isClose}) {
 
 	const [loginPage, setLoginPage] = React.useState("base");
 	const [baseVisible, setBaseVisible] = React.useState(true);
@@ -15,10 +16,18 @@ export default function LoginModal({modal}) {
 	}
 	
 	return (
-			<div className="modal fade" id="memberModal" aria-hidden="true" data-bs-keyboard="false">
-				<div className="modal-dialog modal-dialog-centered">
-					<div className="modal-content">
-						<Logo01 />
+			<div className="cumstomer_modal">
+				<div className="modal_flex">
+					<div className="modal_box login_modal_box">
+						<div className="modal_header">
+							<div className="modal_header_box_blank"></div>
+							<div className="modal_logo_box">
+								<Logo01 />
+							</div>
+							<div className="modal_close_btn_box">
+								<button onClick={isClose}><i className="bi bi-x-lg"></i></button>
+							</div>
+						</div>
 						{baseVisible && (
 							<div className="base">
 								<div className="login_text text_color01">
@@ -40,7 +49,7 @@ export default function LoginModal({modal}) {
 								</div>
 							</div>
 						)}
-						{loginPage === "emailLogin" && <EmailLogin />}
+						{loginPage === "emailLogin" && <EmailLogin isClose={isClose} />}
 					</div>
 				</div>
 			</div>
