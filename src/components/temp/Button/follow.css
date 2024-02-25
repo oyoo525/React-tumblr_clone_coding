@@ -1,0 +1,14 @@
+.follow_box {
+	width: 60px;
+	text-align: right;
+	display: flex;
+	align-items: center;
+}
+
+.follow_btn {
+	font-weight: 700;
+
+}
+.follow_btn:hover {
+	cursor: pointer;
+}

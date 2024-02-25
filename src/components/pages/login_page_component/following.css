@@ -1,0 +1,7 @@
+.following_box .button_box {
+	display: flex;
+}
+
+.following_box .following_page_button {
+	margin-bottom: 8px;
+}

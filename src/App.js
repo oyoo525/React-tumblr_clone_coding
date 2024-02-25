@@ -4,25 +4,28 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 import Header from './components/temp/Header_Footer/Header.tsx';
 import Footer from './components/temp/Header_Footer/Footer.tsx';
-import Main from './components/pages/Main.tsx';
 import PopUp from './components/temp/Header_Footer/PopUp.tsx';
-import StaffPicks from './components/pages/StaffPicks.tsx';
-import AnswerTime from './components/pages/AnswerTime.tsx';
+
 import Topics from './components/pages/Topics.tsx';
+import { useState } from 'react';
+import Dashboard from './components/pages/Dashboard.tsx';
+import Explore from './components/pages/Explore.tsx';
 
 function App() {
+  const [isLogin, setIsLogin] = useState(false);
+
+
   return (
     <>
       <div className="App">
         <BrowserRouter>
-          {/* <PopUp/> */}
-          <Header />
+          {!isLogin && <PopUp setIsLogin={setIsLogin} />}
+          <Header isLogin={isLogin} setIsLogin={setIsLogin} />
           <Routes>
-            <Route path='/' element={<Main />} />
-            <Route path='/trending' element={<Main />} />
-            <Route path='/staff-picks' element={<StaffPicks />} />
-            <Route path='/answertime' element={<AnswerTime />} />
+            <Route path='/' element={<Explore isLogin={isLogin} />} />
+            <Route path='/explore' element={<Explore isLogin={isLogin} />} />
             <Route path='/topics' element={<Topics />} />
+            <Route path='/dashboard' element={<Dashboard isLogin={isLogin} />} />
           </Routes>
           <Footer />
         </BrowserRouter>

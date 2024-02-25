@@ -1,6 +1,6 @@
 import React from "react";
 import './create_feed.css';
-import CreateIcon from "./CreateIcon.tsx";
+import CreateIcon from "../Popup/CreateIcon.tsx";
 
 export default function CreateFeed() {
 	const [createIcon, setCreateIcon] = React.useState(false);
@@ -18,7 +18,9 @@ export default function CreateFeed() {
 				<span className="create_feed_btn_icon text_color01"><i className="bi bi-pencil-fill"></i></span>&nbsp;
 				<span className="create_feed_btn_text text_color01">만들기</span>
 			</div>
-			{createIcon && <CreateIcon hideCreateIcon={hideCreateIcon} />}
+			<div className="create_popup">
+				{createIcon && <CreateIcon hideCreateIcon={hideCreateIcon} />}
+			</div>
 		</>
 	)
 }

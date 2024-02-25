@@ -3,9 +3,16 @@
 	flex-direction: left;
 	align-items: center;
 	width: 100%;
+	height: 100%;
 }
 
 .blog_info {
 	width: 100%;
 	margin-left: 8px;
+}
+
+.user_info {
+	width: 100%;
+	margin-left: 8px;
+	display: flex;
 }

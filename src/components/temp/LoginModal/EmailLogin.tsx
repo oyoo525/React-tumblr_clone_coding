@@ -2,7 +2,7 @@ import React from "react";
 import './emaillogin.css';
 import { useNavigate } from "react-router-dom";
 
-export default function EmailLogin({isClose}) {
+export default function EmailLogin({isClose, setIsLogin}) {
 
 	const navigate = useNavigate();
 
@@ -15,8 +15,9 @@ export default function EmailLogin({isClose}) {
 		} else if(step === 3) {
 			setStep(4);
 		} else if(step === 4) {
-			navigate("/answertime", {replace: true});
+			navigate("/dashboard", {replace: true});
 			isClose();
+			setIsLogin(true);
 		}
 	}
 

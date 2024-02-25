@@ -1,28 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './feed.css';
+import Follow from "../Button/Follow.tsx";
+import FeedContent from "./item/FeedContent.tsx";
+import { UserProfileName } from "../User/UserProfile.tsx";
 
 
 export default function Feed(props) {
+	const random01 = Math.random()*100;
+	const contentImg = "https://source.unsplash.com/random/" + random01;
+
 	return (
-		<div className="feed">
+		<div className="feed_box">
 			<div className="feed_title bg_color02">
-				<div className="profile_box">
-					<img src="https://source.unsplash.com/random/50x50" className="profile_img" alt="프로필 이미지"/>
-				</div>
 				<div className="name_box">
-					<span className="text_color01">닉네임테스트</span>
-					<Link to="" className="link_text">
-						<span className="follow_btn text_color02"> 팔로우</span>
-					</Link>
-				</div>
-				<div className="icon_box">
+					<UserProfileName />
+				</div>	
+				<div className="icon_box text_color01">
 					<span><i className="bi bi-three-dots"></i></span>
 				</div>
 			</div>
-			<div className="feed_content">
-				<img src="https://source.unsplash.com/random" className="profile_img" alt="컨텐츠 이미지"/>
-			</div>
+			<FeedContent />
 			<div className="feed_footer bg_color02 text_color01">
 				<div className="tag_list">
 					<span>#tictok</span>

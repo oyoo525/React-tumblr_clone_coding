@@ -1,3 +1,7 @@
+.header_nav_box {
+	z-index: 10;
+}
+
 .nav_contents {
 	display: flex;
 	padding: 10px 6px;
@@ -6,6 +10,7 @@
 .nav_contents:hover {
 	background-color: skyblue;
 	font-weight: bold;
+	cursor: pointer;
 }
 
 .nav_list {

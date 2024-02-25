@@ -2,7 +2,7 @@ import React from "react";
 import './header_nav.css';
 import UserInfoNav from "./UserInfoNav.tsx";
 
-export default function HeaderNav() {
+export default function HeaderNav({isLogin, setIsLogin}) {
 	const [theme, setTheme] = React.useState("basic");
 	function applyTheme() {
 		const t = theme;
@@ -40,6 +40,7 @@ export default function HeaderNav() {
 					</div>
 				</div>
 			</div>
+			{isLogin && (
 			<div className="login_user">
 				<div className='nav_contents'>
 					<div>
@@ -82,7 +83,7 @@ export default function HeaderNav() {
 					</div>
 				</div>
 				<div className='accordion_content_user_info'>
-					{isOpenUserInfo && <UserInfoNav />}
+					{isOpenUserInfo && <UserInfoNav setIsLogin={setIsLogin} />}
 				</div>
 				<div className='nav_contents'>
 					<div>
@@ -109,6 +110,8 @@ export default function HeaderNav() {
 					</div>
 				</div>
 			</div>
+			)}
+
 		</nav>
 	)
 }

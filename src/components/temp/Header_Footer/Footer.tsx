@@ -6,6 +6,8 @@ import './footer.css';
 import profile_img from '../../../assets/img/download.png';
 import img09 from '../../../assets/img/download09.png';
 import WebNav from "./WebNav.tsx";
+import Follow from "../Button/Follow.tsx";
+import UserProfile from "../User/UserProfile.tsx";
 
 export default function Footer() {
 	const [member, setMember] = React.useState([]);
@@ -36,43 +38,10 @@ export default function Footer() {
 					<span className="text_color01">요즘 뜨는 블로그</span>
 				</div>
 				{/* 블로그 반복~~ */}
-				<div className="popular_contents">
-					<div className="profile_box">
-						<img src={profile_img} className="profile_img" alt="프로필 이미지"/>
-					</div>
-					<div className="blog_info text_color01">
-						<div className="blog_info_title">
-							블로그 이름
-						</div>
-						<div className="blog_info_nickname">
-							활동명
-						</div>
-					</div>
-					<div className="follow_box">
-						<Link to="" className="link_text">
-							<span className="follow_btn text_color02">팔로우</span>
-						</Link>
-					</div>
-				</div>
-				{/* 블로그 반복~~ */}
 				{member.map((member, index, array) => 
 					<div className="popular_contents">
-						<div className="profile_box">
-							<img src={profile_img} className="profile_img" alt="프로필 이미지" />
-						</div>
-						<div className="blog_info text_color01">
-							<div className="blog_info_title">
-								블로그 이름
-							</div>
-							<div className="blog_info_nickname">
-								{member.id}
-							</div>
-						</div>
-						<div className="follow_box">
-							<Link to="" className="link_text">
-								<span className="follow_btn text_color02">팔로우</span>
-							</Link>
-						</div>
+						<UserProfile member={member} />
+						<Follow />
 					</div>
 				)}
 

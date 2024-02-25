@@ -2,7 +2,8 @@ import React from "react";
 import './pop_up.css';
 import LoginModal from "../LoginModal/LoginModal.tsx";
 
-export default function PopUp() {
+export default function PopUp({setIsLogin}) {
+
 	const [modalOpen, setModalOpen] = React.useState(false);
 	const showModal = () => {
 		setModalOpen(true);
@@ -30,7 +31,7 @@ export default function PopUp() {
 					</div>
 				</div>
 			</div>
-			{modalOpen && <LoginModal isOpen={setModalOpen} isClose={hideModal} />}
+			{modalOpen && <LoginModal isOpen={setModalOpen} isClose={hideModal} setIsLogin={setIsLogin} />}
 		</>
 	)
 }

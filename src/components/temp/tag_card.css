@@ -1,0 +1,39 @@
+.tag_card_box {
+	width: 135px;
+	height: 200px;
+	border-radius: 8px;
+	margin: 5px;
+	padding: 5px 8px;
+}
+
+.tag_card_box .tag_card_content {
+	height: 100%;
+}
+
+.tag_card_box .tag_header {
+	height: 15%;
+	padding: 4px;
+}
+
+.tag_card_box .tag_feed {
+	height: 60%;
+	width: 100%;
+	display: flex;
+}
+
+.tag_card_box .tag_feed > div {
+	width: 50%;
+	height: 100;
+	margin: 3px;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.tag_card_box .follow_btn {
+	height: 20%;
+	background-color: #FFF;
+	border-radius: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

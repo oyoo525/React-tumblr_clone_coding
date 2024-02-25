@@ -25,6 +25,9 @@
   .border_top {
     border-top: 1px solid #FFF;
   }
+  .border_bottom {
+    border-bottom: 1px solid #FFF;
+  }
   .bg_color00 {
     background-color: #011140;
   }
@@ -36,6 +39,9 @@
   }
   .bg_color03 {
     background-color: #BF9004;
+  }
+  .bg_color04 {
+    background-color: #FFF;
   }
   .btn01 {
     background-color: skyblue;
@@ -63,6 +69,9 @@
   }
   .border_top {
     border-top: 1px solid #000;
+  }
+  .border_bottom {
+    border-bottom: 1px solid #000;
   }
   .bg_color00 {
     background-color: #FFF;
@@ -115,6 +124,7 @@
 .container_page {
   width: 475px;
   padding: 16px;
+  z-index: 5;
 }
 .profile_box {
   width: 50px;
@@ -148,6 +158,22 @@
   padding: 4px 12px;
   border-radius: 18px;
 }
+.button_style01 {
+  width: 120px;
+  height: 70px;
+  background-image: url(https://source.unsplash.com/random/back);
+  opacity: 0.7;
+  padding: 12px;
+  margin-right: 8px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 900;
+}
+
 
 .popup_text_white {
   color: #FFF;
@@ -160,6 +186,10 @@
 }
 .accordion_title {
   display: flex;
+}
+
+.icon:hover {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1045px) {

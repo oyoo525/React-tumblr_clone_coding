@@ -50,9 +50,7 @@
 .popular_contents {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
 	padding: 6px 12px 6px 12px;
-	width: 100%;
 }
 
 .blog_info {
@@ -66,15 +64,6 @@
 
 .blog_info_nickname {
 	font-size: 14px;
-}
-
-.follow_box {
-	width: 50px;
-	text-align: right;
-}
-
-.follow_btn {
-	font-weight: 700;
 }
 
 .more_blog {

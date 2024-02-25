@@ -1,19 +1,19 @@
-.create_icon_box {
+.create_popup .create_icon_box {
 	display: flex;
 }
 
-.create_icon {
+.create_popup .create_icon {
 	width: 120px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
-.popup_background::before {
+.create_popup .popup_background::before {
 	opacity: 0.6;
 }
 
-.icon_image_box {
+.create_popup .icon_image_box {
 	width: 90px;
 	height: 90px;
 	border-radius: 50%;
@@ -23,14 +23,14 @@
 	font-size: 36px;
 	margin-bottom: 3px;
 }
-.create_icon:hover {
+.create_popup .create_icon:hover {
 	.icon_image_box {
 		animation: vibration 0.7s infinite;
 		width: 110px;
 		height: 110px;
 		font-size: 48px;
 	}
-	.icon_text_box {
+	.create_popup .icon_text_box {
 		font-size: 24px;
 	}
 }
@@ -46,29 +46,29 @@
 	}
 }
 
-.icon_text_box {
+.create_popup .icon_text_box {
 	text-align: center;
 	color: #FFF;
 }
 
-.create_icon_01 {
+.create_popup .create_icon_01 {
 	background-color: #FFF;
 }
-.create_icon_02 {
+.create_popup .create_icon_02 {
 	background-color: #ED8C37;
 }
-.create_icon_03 {
+.create_popup .create_icon_03 {
 	background-color: #F5A936;
 }
-.create_icon_04 {
+.create_popup .create_icon_04 {
 	background-color: #51A885;
 }
-.create_icon_05 {
+.create_popup .create_icon_05 {
 	background-color: #267A9E;
 }
-.create_icon_06 {
+.create_popup .create_icon_06 {
 	background-color: #986b9b;
 }
-.create_icon_07 {
+.create_popup .create_icon_07 {
 	background-color: #DB7476;
 }

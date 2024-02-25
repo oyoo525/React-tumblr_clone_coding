@@ -1,0 +1,41 @@
+.speed_create_icon_box {
+	border-radius: 8px;
+	padding: 12px;
+	margin-bottom: 14px;
+}
+
+.speed_create_icon_box .create_icon_box {
+	display: flex;
+	justify-content: space-between;
+}
+
+.speed_create_icon_box .create_icon {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: calc(100% / 7);
+}
+
+.speed_create_icon_box .icon_image_box {
+	font-size: 32px;
+}
+
+.speed_create_icon_box .create_icon_02 {
+	color: #ED8C37;
+}
+.speed_create_icon_box .create_icon_03 {
+	color: #F5A936;
+}
+.speed_create_icon_box .create_icon_04 {
+	color: #51A885;
+}
+.speed_create_icon_box .create_icon_05 {
+	color: #267A9E;
+}
+.speed_create_icon_box .create_icon_06 {
+	color: #986b9b;
+}
+.speed_create_icon_box .create_icon_07 {
+	color: #DB7476;
+}

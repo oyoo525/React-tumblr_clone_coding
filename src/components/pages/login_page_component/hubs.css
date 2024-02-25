@@ -1,0 +1,4 @@
+.hubs_box {
+	display: flex;
+	flex-wrap: wrap;
+}

@@ -4,7 +4,7 @@ import './login_modal.css';
 import EmailLogin from "./EmailLogin.tsx";
 import { relative } from "path";
 
-export default function LoginModal({isOpen, isClose}) {
+export default function LoginModal({isOpen, isClose, setIsLogin}) {
 
 	const [loginPage, setLoginPage] = React.useState("base");
 	const [baseVisible, setBaseVisible] = React.useState(true);
@@ -49,7 +49,7 @@ export default function LoginModal({isOpen, isClose}) {
 								</div>
 							</div>
 						)}
-						{loginPage === "emailLogin" && <EmailLogin isClose={isClose} />}
+						{loginPage === "emailLogin" && <EmailLogin isClose={isClose} setIsLogin={setIsLogin} />}
 					</div>
 				</div>
 			</div>
