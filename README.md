@@ -4,6 +4,16 @@
 > 2024.02.19 ~ 진행중 <br>
 <br>
 
+## 사용기술
+> React, React-Router-DOM, Typescript, JSX, CSS, bootstrap, bootstrap-icon, axios, Java
+<br>
+
+## 개발환경
+> - Windows 10
+> - VS Code
+> - Spring boot 4.21.1 RELEASE
+<br>
+
 ## 프로젝트 소개
 > ### 프로젝트 목적
 > - 클라이언트단에 대한 숙련도 향상을 위한 프로젝트
@@ -18,16 +28,7 @@
 > - React-Router-DOM의 Link 태그를 사용하면서 오류가 발생했었는데 BrowserRouter밖에서 사용하면 오류가 발생한다는 점을 확인했다.
 > - 이전에는 bootstrap에 css,js를 많이 의존하는 편이었는데 modal을 사용할땐 오히려 오류가 발생한 적이 있어서 직접 만들었고 z-index를 사용해야한다는 점도 알게 되었다.
 > - Component가 방대하게 생긴다는 점을 알았고, component에 대한 직접적인 css 보다는 해당 component를 가져와서 적용하는 css가 더 손쉽게 사용할 수 있다는 것도 알게되었다.
-
 <br>
-
-## 사용기술
-Java, React, React-Router-DOM, Typescript, JSX, CSS, bootstrap, bootstrap-icon, axios
-
-## 개발환경
-- Windows 10
-- VS Code
-- Spring boot 4.21.1 RELEASE
 
 ## 실행페이지
 |기본모드|
@@ -43,15 +44,3 @@ Java, React, React-Router-DOM, Typescript, JSX, CSS, bootstrap, bootstrap-icon, 
 |![01](https://github.com/oyoo525/React-tumblr_clone_coding/assets/141537487/dad3f327-6e5e-4bc9-b6e1-ac4a030d8635)|![02](https://github.com/oyoo525/React-tumblr_clone_coding/assets/141537487/932394b2-2401-4d79-8d5a-29ee03b174f0)|![03](https://github.com/oyoo525/React-tumblr_clone_coding/assets/141537487/c9a6a4d4-6cbb-463c-9586-65b733771127)|
 |![04](https://github.com/oyoo525/React-tumblr_clone_coding/assets/141537487/b19b8e00-b9c9-42d7-8bac-9752c170d65d)|![05](https://github.com/oyoo525/React-tumblr_clone_coding/assets/141537487/19d6f9b9-76f6-4cf7-9dbe-e846ad7198ca)| |
 
-
-
-
-
-
-
-
-## 보완할 점
-- 더보기 클릭 시 옵션 보이게 설정하기
-- 그리드 변경할 수 있게 설정하게
-- trending 상단 카드들 캐러셀 설정하기
-- DB 데이터 연동할 수 있게 서버작업하기
