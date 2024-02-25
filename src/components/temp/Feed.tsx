@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import img02 from '../../assets/img/download02.png';
-import img06 from '../../assets/img/download06.png';
 import './feed.css';
 
 
@@ -10,7 +8,7 @@ export default function Feed(props) {
 		<div className="feed">
 			<div className="feed_title bg_color02">
 				<div className="profile_box">
-					<img src={img02} className="profile_img" alt="프로필 이미지"/>
+					<img src="https://source.unsplash.com/random/50x50" className="profile_img" alt="프로필 이미지"/>
 				</div>
 				<div className="name_box">
 					<span className="text_color01">닉네임테스트</span>
@@ -23,7 +21,7 @@ export default function Feed(props) {
 				</div>
 			</div>
 			<div className="feed_content">
-				<img src={img06} className="profile_img" alt="컨텐츠 이미지"/>
+				<img src="https://source.unsplash.com/random" className="profile_img" alt="컨텐츠 이미지"/>
 			</div>
 			<div className="feed_footer bg_color02 text_color01">
 				<div className="tag_list">

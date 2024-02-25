@@ -1,6 +1,7 @@
 .nav_contents {
 	display: flex;
 	padding: 10px 6px;
+	width: 100%;
 }
 .nav_contents:hover {
 	background-color: skyblue;

@@ -4,7 +4,7 @@ import './create_icon.css';
 export default function CreateIcon({hideCreateIcon}) {
 
 	return (
-		<div className="popup_background bg_color00">
+		<div className="popup_background">
 			<div className="popup_layout" onClick={hideCreateIcon}>
 				<div className="create_icon_box" onClick={(e) => e.stopPropagation()}>
 					<div className="create_icon">

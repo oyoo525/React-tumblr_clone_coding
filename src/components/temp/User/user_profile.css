@@ -1,0 +1,11 @@
+.user_profile_box {
+	display: flex;
+	flex-direction: left;
+	align-items: center;
+	width: 100%;
+}
+
+.blog_info {
+	width: 100%;
+	margin-left: 8px;
+}

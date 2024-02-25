@@ -1,0 +1,20 @@
+.user_info_nav_box {
+	border-top: 1px solid #FFF;
+	margin: 0 5px;
+}
+.user_blog_box {
+	width: 100%;
+} 
+.user_blog_box01 {
+	display: none;
+}
+.user_blog_header {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.user_blog_content {
+	margin: 7px 0;
+	padding-top: 7px;
+}
