@@ -1,0 +1,23 @@
+.answer_modal_box .modal_box {
+	background-color: #FFF;
+	padding: 32px;
+	text-align: center;
+	width: 480px;
+}
+
+.answer_modal_box .modal_header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 14px;
+}
+
+.answer_modal_box .modal_close_btn_box {
+	width: 30px;
+	text-align: right;
+}
+
+.answer_modal_box .modal_close_btn_box > button {
+	border: none;
+	background-color: transparent;
+	font-size: 24px;
+}

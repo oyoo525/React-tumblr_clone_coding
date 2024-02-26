@@ -1,0 +1,119 @@
+.report_box {
+	width: 500px;
+	max-height: 800px;
+	background-color: #FFF;
+}
+
+.report_box .report_header {
+	width: 100%;
+	height: 10%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 15px;
+	border-bottom: 1px solid lightgray;
+}
+
+.setting_icon:hover {
+	cursor: pointer;
+}
+
+.report_box .report_content {
+	width: 100%;
+	height: 75%;
+	border-bottom: 1px solid lightgray;
+	padding: 15px;
+}
+
+.report_box .report_content .content_title {
+	margin-bottom: 5px;
+}
+
+.report_box .report_content input {
+	width: 100%;
+	padding: 5px;
+	border: none;
+}
+
+.report_box .report_content input::placeholder {
+	font-size: 20px;
+}
+
+.report_box .report_content input:focus {
+	outline: none;
+}
+
+.report_box .report_content .content_feed .icon_box {
+	font-size: 20px;
+}
+
+.report_box .report_content .content_feed .icon_box > * {
+	cursor: pointer;
+}
+
+.report_box .report_content .content_feed .icon_box .icon_color01 {
+	color: #ED8C37;
+}
+.report_box .report_content .content_feed .icon_box .icon_color02 {
+	color: #F5A936;
+}
+.report_box .report_content .content_feed .icon_box .icon_color03 {
+	color: #51A885;
+}
+.report_box .report_content .content_feed .icon_box .icon_color04 {
+	color: #267A9E;
+}
+.report_box .report_content .content_feed .icon_box .icon_color05 {
+	color: #986b9b;
+}
+.report_box .report_content .content_feed .icon_box .icon_color06 {
+	color: #DB7476;
+}
+.report_box .report_content .content_feed .icon_box .icon_color07 {
+	color: #2e2e2e;
+}
+
+.report_box .report_content .content_feed textarea {
+	width: 100%;
+	border: none;
+	resize: none;
+}
+
+.report_box .report_content .content_feed textarea:focus {
+	outline: none;
+}
+
+.report_box .report_content .content_footer_tag {
+	width: 100%;
+}
+
+.report_box .report_content .content_footer_tag .tag_box {
+	border-radius: 12px;
+	background-color: #2e2e2e;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.report_box .report_content .content_footer_tag textarea {
+	background-color: transparent;
+	border: none;
+	padding: 4px 12px;
+	color: blue;
+	resize: none;
+	overflow: hidden;
+}
+
+.report_box .report_content .content_footer_tag textarea::placeholder {
+	color: blue;
+}
+
+.report_box .report_content .content_footer_tag textarea:focus {
+	outline: none;
+}
+
+.report_box .report_footer .buttons {
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 12px;
+}

@@ -1,19 +1,19 @@
-.create_popup .create_icon_box {
+.popup_background .create_popup .create_icon_box_box {
 	display: flex;
 }
 
-.create_popup .create_icon {
+.popup_background .create_popup .create_icon {
 	width: 120px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
-.create_popup .popup_background::before {
+.popup_background .create_popup .popup_background::before {
 	opacity: 0.6;
 }
 
-.create_popup .icon_image_box {
+.popup_background .create_popup .icon_image_box {
 	width: 90px;
 	height: 90px;
 	border-radius: 50%;
@@ -23,7 +23,7 @@
 	font-size: 36px;
 	margin-bottom: 3px;
 }
-.create_popup .create_icon:hover {
+.popup_background .create_popup .create_icon:hover {
 	.icon_image_box {
 		animation: vibration 0.7s infinite;
 		width: 110px;
@@ -46,29 +46,29 @@
 	}
 }
 
-.create_popup .icon_text_box {
+.popup_background .create_popup .icon_text_box {
 	text-align: center;
 	color: #FFF;
 }
 
-.create_popup .create_icon_01 {
+.popup_background .create_popup .create_icon_01 {
 	background-color: #FFF;
 }
-.create_popup .create_icon_02 {
+.popup_background .create_popup .create_icon_02 {
 	background-color: #ED8C37;
 }
-.create_popup .create_icon_03 {
+.popup_background .create_popup .create_icon_03 {
 	background-color: #F5A936;
 }
-.create_popup .create_icon_04 {
+.popup_background .create_popup .create_icon_04 {
 	background-color: #51A885;
 }
-.create_popup .create_icon_05 {
+.popup_background .create_popup .create_icon_05 {
 	background-color: #267A9E;
 }
-.create_popup .create_icon_06 {
+.popup_background .create_popup .create_icon_06 {
 	background-color: #986b9b;
 }
-.create_popup .create_icon_07 {
+.popup_background .create_popup .create_icon_07 {
 	background-color: #DB7476;
 }

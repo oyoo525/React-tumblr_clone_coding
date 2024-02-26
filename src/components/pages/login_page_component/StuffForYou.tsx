@@ -1,5 +1,4 @@
 import React from "react";
-import './stuff_for_you.css';
 import Feed from "../../temp/Feed/Feed.tsx";
 
 export default function StuffForYou() {

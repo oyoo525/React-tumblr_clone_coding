@@ -16,9 +16,10 @@ export default function LoginModal({isOpen, isClose, setIsLogin}) {
 	}
 	
 	return (
+		<div className="login_modal_box">
 			<div className="cumstomer_modal">
 				<div className="modal_flex">
-					<div className="modal_box login_modal_box">
+					<div className="modal_box">
 						<div className="modal_header">
 							<div className="modal_header_box_blank"></div>
 							<div className="modal_logo_box">
@@ -53,5 +54,6 @@ export default function LoginModal({isOpen, isClose, setIsLogin}) {
 					</div>
 				</div>
 			</div>
+		</div>
 	)
 }

@@ -16,7 +16,7 @@ export default function MenuCanvasLeft({isLogin, setIsLogin}) {
 				</div>
 				<div className="offcanvas-body">
 					<div className="canvas_login_btn">
-						<span>로그인</span>
+						<span>{isLogin ? '로그아웃' : '로그인'}</span>
 					</div>
 					<div className="offcanvas_header_nav">
 						<HeaderNav isLogin={isLogin} setIsLogin={setIsLogin} />

@@ -1,8 +1,11 @@
 import React from "react";
 import './user_info_nav.css';
 import UserProfile from "../User/UserProfile.tsx";
+import { useNavigate } from "react-router-dom";
 
 export default function UserInfoNav({setIsLogin}) {
+	const navigate = useNavigate();
+
 	const loginMember = {
 		id : "oyoo525",
 		name : "세화짱짱"
@@ -10,6 +13,7 @@ export default function UserInfoNav({setIsLogin}) {
 	
 	const isLogout = () => {
 		setIsLogin(false);
+		navigate("/");
 	}
 
 	return (
@@ -46,7 +50,7 @@ export default function UserInfoNav({setIsLogin}) {
 							<span className='nav_text nav_list text_color01'><i className="bi bi-plus-lg"></i>새 블로그</span>
 						</div>
 					</div>
-					<div className="user_blog_content">
+					<div className="user_blog_content" onClick={() => navigate(`/blog/${loginMember.id}`)}>
 						<UserProfile member={loginMember} />
 					</div>
 				</div>

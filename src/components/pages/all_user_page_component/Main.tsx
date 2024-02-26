@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import './main.css';
 import TagBox from "./TagBox.tsx";
 import Feed from "../../temp/Feed/Feed.tsx";
@@ -13,17 +13,13 @@ export default function Main({isLogin}) {
 		{no : "6", title : "batman", tag : "#dc comics"}
 ];
 
-	const carousel_right = () => {
-
-	}
-
 	return (
 		<div className="trending_box">
 			<div className="slide_box">
 				<div className="carousel_box">
 					<div className="speed_box">
 						{data.map((data) => <TagBox key={data.no} data={data} /> )}
-					</div>
+					</div>					
 				</div>
 			</div>
 			<div className="feed_box">				

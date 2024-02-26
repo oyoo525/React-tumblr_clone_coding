@@ -1,6 +1,7 @@
 import React from "react";
 import './header_nav.css';
 import UserInfoNav from "./UserInfoNav.tsx";
+import { useNavigate } from "react-router-dom";
 
 export default function HeaderNav({isLogin, setIsLogin}) {
 	const [theme, setTheme] = React.useState("basic");
@@ -20,10 +21,20 @@ export default function HeaderNav({isLogin, setIsLogin}) {
 		}
 	}
 
+	const navigator = useNavigate();
+	const around = () => {
+		if(isLogin) {
+			navigator('/dashboard')
+		} else {
+			navigator('/explore')
+		}
+	}
+
+
 	return (
 		<nav className="header_nav_box">
 			<div className="all_user">
-				<div className='nav_contents'>
+				<div className='nav_contents' onClick={around}>
 					<div>
 						<span className='nav_list text_color01'><i className="bi bi-compass"></i></span>
 					</div>
@@ -58,7 +69,7 @@ export default function HeaderNav({isLogin, setIsLogin}) {
 						<span className='nav_text nav_list text_color01'> 메세지</span>
 					</div>
 				</div>
-				<div className='nav_contents'>
+				<div className='nav_contents' onClick={() => navigator('/inbox')}>
 					<div>
 						<span className='nav_list text_color01'><i className="bi bi-envelope-fill"></i></span>
 					</div>

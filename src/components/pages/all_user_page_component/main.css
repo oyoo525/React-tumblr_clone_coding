@@ -1,16 +1,31 @@
-.carousel_box {
+.trending_box .carousel_box {
 	overflow: hidden;
 }
 
-.speed_box {
+.trending_box .speed_box {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	align-items: center;
-	width: 100%;
 	height: 200px;
+	animation: autoCarousel 8s infinite;
 }
 
-.feed_box {
-	width: 100%;
+.trending_box .speed_box:hover {
+	animation-play-state: paused;
+}
+
+@keyframes autoCarousel {
+	0% {
+		transform: translateX(0px);
+	}
+	30% {
+		transform: translateX(-276px);
+	}
+	60% {
+		transform: translateX(-480px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
 }

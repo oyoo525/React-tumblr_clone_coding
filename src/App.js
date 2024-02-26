@@ -10,9 +10,12 @@ import Topics from './components/pages/Topics.tsx';
 import { useState } from 'react';
 import Dashboard from './components/pages/Dashboard.tsx';
 import Explore from './components/pages/Explore.tsx';
+import Blog from './components/pages/Blog.tsx';
+import Message from './components/pages/Message.tsx';
 
 function App() {
   const [isLogin, setIsLogin] = useState(false);
+  const memberId = "oyoo525";
 
 
   return (
@@ -26,6 +29,8 @@ function App() {
             <Route path='/explore' element={<Explore isLogin={isLogin} />} />
             <Route path='/topics' element={<Topics />} />
             <Route path='/dashboard' element={<Dashboard isLogin={isLogin} />} />
+            <Route path={`/blog/:memberId`} element={<Blog isLogin={isLogin} />}/>
+            <Route path='/inbox' element={<Message isLogin={isLogin} />} />
           </Routes>
           <Footer />
         </BrowserRouter>

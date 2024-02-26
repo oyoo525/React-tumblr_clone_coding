@@ -6,6 +6,7 @@ import HeaderNav from './HeaderNav.tsx';
 import MenuCanvasLeft from './MenuCanvasLeft.tsx';
 import Logo01 from '../Logo/Logo.tsx';
 import CreateFeed from '../Button/CreateFeed.tsx';
+import { Link } from 'react-router-dom';
 
 export default function Header({isLogin, setIsLogin}) {
 
@@ -17,10 +18,10 @@ export default function Header({isLogin, setIsLogin}) {
 						<MenuCanvasLeft isLogin={isLogin} setIsLogin={setIsLogin}  />
 					</div>
 					<div className='logo01'>
-						<Logo01 />
+						<Link to={isLogin ? "/dashboard" : "/"} className='link_text'><Logo01 /></Link>
 					</div>
 					<div className='logo02'>
-						<Logo02 />
+						<Link to={isLogin ? "/dashboard" : "/"} className='link_text'><Logo02 /></Link>
 					</div>
 					<div className='header_nav'>
 						<HeaderNav isLogin={isLogin} setIsLogin={setIsLogin}/>

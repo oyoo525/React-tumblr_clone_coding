@@ -1,8 +1,19 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import './nav.css';
 
 export default function Nav({isLogin, setNav}) {
+	const navigator = useNavigate();
+
+	const moveNav01 = (type) => {
+		setNav(type);
+		navigator("/explore");
+	}
+
+	const moveNav02 = (type) => {
+		setNav(type);
+		navigator("/dashboard");
+	}
 
 	return (
 		<div className="container_nav border_bottom">
@@ -10,13 +21,13 @@ export default function Nav({isLogin, setNav}) {
 				<div className="navbar_flex_box">
 					{!isLogin && (
 						<>
-							<div className="nav-item nav_menu" onClick={() => setNav('trending')}>
+							<div className="nav-item nav_menu" onClick={() => moveNav01('trending')}>
 								<span className="text_color01">요즘 뜨는</span>
 							</div>
-							<div className="nav-item nav_menu" onClick={() => setNav('staff_picks')}>
+							<div className="nav-item nav_menu" onClick={() => moveNav01('staff_picks')}>
 								<span className="text_color01">스태프 추천</span>
 							</div>
-							<div className="nav-item nav_menu" onClick={() => setNav('answertime')}>
+							<div className="nav-item nav_menu" onClick={() => moveNav01('answertime')}>
 								<span className="text_color01">질문시간</span>
 							</div>
 							{/* <div className="nav-item nav_menu more_btn">
@@ -36,13 +47,13 @@ export default function Nav({isLogin, setNav}) {
 					)}
 					{isLogin && (
 						<>
-							<div className="nav-item nav_menu" onClick={() => setNav('stuff_for_you')}>
+							<div className="nav-item nav_menu" onClick={() => moveNav02('stuff_for_you')}>
 								<span className="text_color01">내 취향</span>
 							</div>
-							<div className="nav-item nav_menu" onClick={() => setNav('following')}>
+							<div className="nav-item nav_menu" onClick={() => moveNav02('following')}>
 								<span className="text_color01">팔로잉</span>
 							</div>
-							<div className="nav-item nav_menu" onClick={() => setNav('hubs')}>
+							<div className="nav-item nav_menu" onClick={() => moveNav02('hubs')}>
 								<span className="text_color01">팔로그한 태그</span>
 							</div>
 						</>

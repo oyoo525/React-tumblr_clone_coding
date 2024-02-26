@@ -1,27 +1,25 @@
-.login_modal_box {
+.login_modal_box .modal_box {
 	background-color: #4F81F7;
 	padding: 32px;
 	text-align: center;
 	width: 480px;
 }
 
-.modal_header {
+.login_modal_box .modal_header {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 14px;
 }
 
-.modal_header > .modal_header_box_blank {
+.login_modal_box .modal_header_box_blank {
 	width: 30px;
 }
-.modal_close_btn_box {
+.login_modal_box .modal_close_btn_box {
 	width: 30px;
 	text-align: right;
 }
-.modal_logo_box {
-}
 
-.modal_close_btn_box > button {
+.login_modal_box .modal_close_btn_box > button {
 	border: none;
 	background-color: transparent;
 	color: #FFF;
@@ -29,16 +27,16 @@
 }
 
 
-.login_text {
+.login_modal_box .login_text {
 	margin-bottom: 24px;
 }
 
-.login_word {
+.login_modal_box .login_word {
 	font-size: 20px;
 	margin-bottom: 16px;
 }
 
-.login_btn_box {
+.login_modal_box .login_btn_box {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -46,7 +44,7 @@
 	color: black;
 }
 
-.social_login_btn {
+.login_modal_box .social_login_btn {
 	background-color: #FFF;
 	margin-bottom: 8px;
 	width: 70%;

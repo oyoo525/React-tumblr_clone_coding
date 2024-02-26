@@ -55,3 +55,54 @@
 	font-size: 24px;
 	font-weight: 900;
 }
+
+.feed_box .feed_info_dot_btn_box {
+	position: relative;
+}
+
+.feed_box .feed_info_dot_btn_box .feed_info_dot_icon {
+	font-size: 24px;
+	cursor: pointer;
+}
+
+.feed_box .feed_info_dot_btn {
+	position: absolute;
+	width: 200px;
+	top: 40px;
+	right: -20px;
+	padding: 8px;
+
+}
+
+.feed_box .feed_info_dot_btn .div_tail_box {
+	padding: 3px;
+	margin-bottom: 4px;
+	position: relative;
+	background-color: #FFF;
+	box-shadow: 1px;
+	font-size: 14px;
+	font-weight: 700;
+	border-radius: 5px;
+}
+
+.feed_box .feed_info_dot_btn .div_tail_box::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 15%;
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-bottom-color: #FFF;
+	border-top: 0;
+	margin-left: -10px;
+	margin-top: -10px;
+}
+
+.feed_box .feed_info_dot_btn .div_tail_box .feed_date_box {
+	border-bottom: 1px solid lightgray;
+}
+
+.feed_box .feed_info_dot_btn .div_tail_box > div {
+	padding: 3px;
+}

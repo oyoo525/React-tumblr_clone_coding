@@ -1,20 +1,25 @@
-.speed_create_icon_box {
+.dashboard_page .speed_create_icon_box {
 	border-radius: 8px;
 	padding: 12px;
 	margin-bottom: 14px;
+	width: 100%;
 }
 
-.speed_create_icon_box .create_icon_box {
+.dashboard_page .create_icon_box_box {
 	display: flex;
+	flex-direction: row;
 	justify-content: space-between;
 }
 
-.speed_create_icon_box .create_icon {
+.dashboard_page .create_icon_box_box > div {
+	width: calc(100% / 7);
+}
+
+.dashboard_page .create_icon_box_box .create_icon {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: calc(100% / 7);
 }
 
 .speed_create_icon_box .icon_image_box {

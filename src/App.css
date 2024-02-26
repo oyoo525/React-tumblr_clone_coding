@@ -13,6 +13,9 @@
   .text_color02 {
     color: skyblue;
   }
+  .text_danger {
+    color: red;
+  }
   .search_input::placeholder {
     color: #FFF;
   }
@@ -57,6 +60,9 @@
   }
   .text_color02 {
     color: #404040;
+  }
+  .text_danger {
+    color: red;
   }
   .search_input::placeholder {
     color: #000;
@@ -157,6 +163,7 @@
   margin: 8px;
   padding: 4px 12px;
   border-radius: 18px;
+  cursor: pointer;
 }
 .button_style01 {
   width: 120px;
@@ -191,6 +198,8 @@
 .icon:hover {
   cursor: pointer;
 }
+
+
 
 @media screen and (max-width: 1045px) {
   .App {
